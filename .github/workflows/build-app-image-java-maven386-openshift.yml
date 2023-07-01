@@ -1,0 +1,11 @@
+name: Build app and imagem java mavenn 3.8.6
+
+on:
+  workflowcall:
+    inputs:
+      repository-name:
+      version-java
+    secrets:
+jobs:
+  app-image:
+    runs-on: 

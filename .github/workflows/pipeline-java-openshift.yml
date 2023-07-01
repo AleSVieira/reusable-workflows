@@ -1,0 +1,14 @@
+name: Pipeline java openshift
+
+on:
+  workflow_call:
+    inputs:
+      repository-name:
+        description: 'Repsotory name'
+    secret:
+
+jobs:
+  Build:
+    uses: ./.github/workflows/build-app-image-java-maven386-openshift.yml
+
+Deploy-dev: s
